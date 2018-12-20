@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/kelseyhightower/envconfig"
-	ma "github.com/multiformats/go-multiaddr"
+	ma "gx/ipfs/QmNTCey11oxhb1AxDnQBRHtdhap6Ctud872NjAYPYYXPuc/go-multiaddr"
+	"gx/ipfs/QmYgGtLm9WJRgh6iuaZap8qVC1gqixFbZCNfhjLNBhWMCm/envconfig"
 
 	"github.com/ipfs/ipfs-cluster/config"
 )

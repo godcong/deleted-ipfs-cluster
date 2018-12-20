@@ -8,7 +8,7 @@ import (
 
 	"github.com/ipfs/ipfs-cluster/config"
 
-	ma "github.com/multiformats/go-multiaddr"
+	ma "gx/ipfs/QmNTCey11oxhb1AxDnQBRHtdhap6Ctud872NjAYPYYXPuc/go-multiaddr"
 )
 
 const configKey = "ipfshttp"

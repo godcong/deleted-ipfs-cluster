@@ -24,17 +24,17 @@ import (
 	"github.com/ipfs/ipfs-cluster/adder/adderutils"
 	types "github.com/ipfs/ipfs-cluster/api"
 
-	mux "github.com/gorilla/mux"
-	gostream "github.com/hsanjuan/go-libp2p-gostream"
-	p2phttp "github.com/hsanjuan/go-libp2p-http"
-	cid "github.com/ipfs/go-cid"
-	logging "github.com/ipfs/go-log"
-	libp2p "github.com/libp2p/go-libp2p"
-	rpc "github.com/libp2p/go-libp2p-gorpc"
-	host "github.com/libp2p/go-libp2p-host"
-	peer "github.com/libp2p/go-libp2p-peer"
-	ma "github.com/multiformats/go-multiaddr"
-	manet "github.com/multiformats/go-multiaddr-net"
+	ma "gx/ipfs/QmNTCey11oxhb1AxDnQBRHtdhap6Ctud872NjAYPYYXPuc/go-multiaddr"
+	p2phttp "gx/ipfs/QmPEnz47VKuAt2yhAiWEpvDtMYdxcfAVV5opEsRC3pHMkB/go-libp2p-http"
+	cid "gx/ipfs/QmR8BauakNcBa3RbE4nbQu76PDiJgoQgz8AJdhJuiU4TAw/go-cid"
+	gostream "gx/ipfs/QmRWCLnGnvf2SxoPRFxbqfH9FxfzNjgpihvDtL6WM5X478/go-libp2p-gostream"
+	rpc "gx/ipfs/QmTfA73jjmEphGCYGYyZksqy4vRKdv9sKJLKb6WzbCBqJB/go-libp2p-gorpc"
+	mux "gx/ipfs/QmVrBjGjskzhW7HRfC56f4mT3nmNBHj2WWnEXr39G7Y6w8/mux"
+	peer "gx/ipfs/QmY5Grm8pJdiSSVsYxx4uNRgweY72EmYwuSDbRnbFok3iY/go-libp2p-peer"
+	manet "gx/ipfs/QmZcLBXKaFe8ND5YHPkJRAwmhJGrVsi1JqDZNyJ4nRK5Mj/go-multiaddr-net"
+	host "gx/ipfs/QmaoXrM4Z41PD48JY36YqQGKQpLGjyLA2cKcLsES7YddAq/go-libp2p-host"
+	logging "gx/ipfs/QmcuXC5cxs79ro2cUuHs4HQ2bkDLJUYokwL8aivcX6HW3C/go-log"
+	libp2p "gx/ipfs/QmdJdFQc5U3RAKgJQGmWR7SSM7TLuER5FWz5Wq6Tzs2CnS/go-libp2p"
 )
 
 func init() {

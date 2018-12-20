@@ -9,10 +9,10 @@ import (
 	"io/ioutil"
 	"sync"
 
-	msgpack "github.com/multiformats/go-multicodec/msgpack"
+	msgpack "gx/ipfs/QmYMiyZRYDmhMr2phMc4FGrYbsyzvR751BgeobnWroiq2z/go-multicodec/msgpack"
 
-	cid "github.com/ipfs/go-cid"
-	logging "github.com/ipfs/go-log"
+	cid "gx/ipfs/QmR8BauakNcBa3RbE4nbQu76PDiJgoQgz8AJdhJuiU4TAw/go-cid"
+	logging "gx/ipfs/QmcuXC5cxs79ro2cUuHs4HQ2bkDLJUYokwL8aivcX6HW3C/go-log"
 
 	"github.com/ipfs/ipfs-cluster/api"
 )

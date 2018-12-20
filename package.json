@@ -155,6 +155,12 @@
       "hash": "QmeP7Gybon3hs9KhoxSFvzqAHQS6xgyKYvsnjqktaXX3QN",
       "name": "go-libp2p-pubsub",
       "version": "100.11.9"
+    },
+    {
+      "author": "multiformats",
+      "hash": "QmNTCey11oxhb1AxDnQBRHtdhap6Ctud872NjAYPYYXPuc",
+      "name": "go-multiaddr",
+      "version": "v1.3.0"
     }
   ],
   "gxVersion": "0.11.0",

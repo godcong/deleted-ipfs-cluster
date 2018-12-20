@@ -11,14 +11,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kelseyhightower/envconfig"
+	"gx/ipfs/QmYgGtLm9WJRgh6iuaZap8qVC1gqixFbZCNfhjLNBhWMCm/envconfig"
 
 	"github.com/ipfs/ipfs-cluster/config"
 
-	crypto "github.com/libp2p/go-libp2p-crypto"
-	peer "github.com/libp2p/go-libp2p-peer"
-	pnet "github.com/libp2p/go-libp2p-pnet"
-	ma "github.com/multiformats/go-multiaddr"
+	ma "gx/ipfs/QmNTCey11oxhb1AxDnQBRHtdhap6Ctud872NjAYPYYXPuc/go-multiaddr"
+	crypto "gx/ipfs/QmNiJiXwWE3kRhZrC5ej3kSjWHm337pYfhjLGSCDNKJP2s/go-libp2p-crypto"
+	pnet "gx/ipfs/QmY4Q5JC4vxLEi8EpVxJM4rcRryEVtH1zRKVTAm6BKV1pg/go-libp2p-pnet"
+	peer "gx/ipfs/QmY5Grm8pJdiSSVsYxx4uNRgweY72EmYwuSDbRnbFok3iY/go-libp2p-peer"
 )
 
 const configKey = "cluster"

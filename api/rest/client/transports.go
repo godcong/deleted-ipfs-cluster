@@ -10,12 +10,12 @@ import (
 
 	"github.com/ipfs/ipfs-cluster/api"
 
-	p2phttp "github.com/hsanjuan/go-libp2p-http"
-	libp2p "github.com/libp2p/go-libp2p"
-	ipnet "github.com/libp2p/go-libp2p-interface-pnet"
-	peerstore "github.com/libp2p/go-libp2p-peerstore"
-	pnet "github.com/libp2p/go-libp2p-pnet"
-	madns "github.com/multiformats/go-multiaddr-dns"
+	p2phttp "gx/ipfs/QmPEnz47VKuAt2yhAiWEpvDtMYdxcfAVV5opEsRC3pHMkB/go-libp2p-http"
+	peerstore "gx/ipfs/QmPiemjiKBC9VA7vZF82m4x1oygtg2c2YVqag8PX7dN1BD/go-libp2p-peerstore"
+	madns "gx/ipfs/QmQc7jbDUsxUJZyFJzxVrnrWeECCct6fErEpMqtjyWvCX8/go-multiaddr-dns"
+	ipnet "gx/ipfs/QmW7Ump7YyBMr712Ta3iEVh3ZYcfVvJaPryfbCnyE826b4/go-libp2p-interface-pnet"
+	pnet "gx/ipfs/QmY4Q5JC4vxLEi8EpVxJM4rcRryEVtH1zRKVTAm6BKV1pg/go-libp2p-pnet"
+	libp2p "gx/ipfs/QmdJdFQc5U3RAKgJQGmWR7SSM7TLuER5FWz5Wq6Tzs2CnS/go-libp2p"
 )
 
 // This is essentially a http.DefaultTransport. We should not mess

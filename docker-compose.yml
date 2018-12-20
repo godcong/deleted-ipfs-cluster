@@ -96,3 +96,58 @@ services:
 
 # For adding more peers, copy PEER 1 and rename things to ipfs2, cluster2.
 # Keep bootstrapping to cluster0.
+##################################################################################
+## Cluster PEER 2 ################################################################
+##################################################################################
+
+  ipfs2:
+    container_name: ipfs2
+    image: ipfs/go-ipfs:release
+    ports:
+          - "4201:4001" # ipfs swarm
+#         - "5001:5001" # expose if needed/wanted
+#         - "8080:8080" # exposes if needed/wanted
+    volumes:
+      - ./compose/ipfs2:/data/ipfs
+      
+  cluster0:
+    container_name: cluster2
+    image: ipfs/ipfs-cluster:latest
+    depends_on:
+      - ipfs2
+    environment:
+      CLUSTER_SECRET: ${CLUSTER_SECRET} # From shell variable
+      IPFS_API: /dns4/ipfs2/tcp/5001
+    ports:
+          - "127.0.0.1:9294:9094" # API
+#         - "9096:9096" # Cluster IPFS Proxy endpoint
+    volumes:
+      - ./compose/cluster2:/data/ipfs-cluster
+
+##################################################################################
+## Cluster PEER 3 ################################################################
+##################################################################################
+
+  ipfs3:
+    container_name: ipfs3
+    image: ipfs/go-ipfs:release
+    ports:
+          - "4301:4001" # ipfs swarm
+#         - "5001:5001" # expose if needed/wanted
+#         - "8080:8080" # exposes if needed/wanted
+    volumes:
+      - ./compose/ipfs3:/data/ipfs
+      
+  cluster0:
+    container_name: cluster2
+    image: ipfs/ipfs-cluster:latest
+    depends_on:
+      - ipfs3
+    environment:
+      CLUSTER_SECRET: ${CLUSTER_SECRET} # From shell variable
+      IPFS_API: /dns4/ipfs3/tcp/5001
+    ports:
+          - "127.0.0.1:9394:9094" # API
+#         - "9096:9096" # Cluster IPFS Proxy endpoint
+    volumes:
+      - ./compose/cluster3:/data/ipfs-cluster      

@@ -9,11 +9,11 @@ import (
 	"path/filepath"
 	"time"
 
-	hraft "github.com/hashicorp/raft"
-	raftboltdb "github.com/hashicorp/raft-boltdb"
-	host "github.com/libp2p/go-libp2p-host"
-	peer "github.com/libp2p/go-libp2p-peer"
-	p2praft "github.com/libp2p/go-libp2p-raft"
+	p2praft "gx/ipfs/QmQgSkYKKsAD1evgDyYCeJ2cq1kjgKLAWDAXrmCFkPEdFH/go-libp2p-raft"
+	hraft "gx/ipfs/QmWh13Q23jcK2okVexqB49r8DsAKsC3etMgkp8b5ABj9wR/raft"
+	peer "gx/ipfs/QmY5Grm8pJdiSSVsYxx4uNRgweY72EmYwuSDbRnbFok3iY/go-libp2p-peer"
+	raftboltdb "gx/ipfs/QmZa48BnsaEMVNf1hT2HYP2ak97fqyTnadXu6xSu2Y8xui/raft-boltdb"
+	host "gx/ipfs/QmaoXrM4Z41PD48JY36YqQGKQpLGjyLA2cKcLsES7YddAq/go-libp2p-host"
 
 	"github.com/ipfs/ipfs-cluster/state"
 )
